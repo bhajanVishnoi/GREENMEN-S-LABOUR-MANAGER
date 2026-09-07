@@ -1,0 +1,16 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F5F8F6">
+<LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+<TextView android:text="GreenMen's Labour Manager" android:textSize="24sp" android:textStyle="bold" android:textColor="#08783C" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:id="@+id/dateText" android:textSize="15sp" android:layout_marginTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+<TextView android:id="@+id/totalText" android:text="Total Labour\n0" android:gravity="center" android:textStyle="bold" android:padding="16dp" android:background="#E3F2FD" android:layout_weight="1" android:layout_width="0dp" android:layout_height="90dp"/>
+<TextView android:id="@+id/presentText" android:text="Present\n0" android:gravity="center" android:textStyle="bold" android:padding="16dp" android:background="#E4F7EA" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_width="0dp" android:layout_height="90dp"/>
+</LinearLayout>
+<TextView android:id="@+id/wageText" android:text="This Month Wages\n₹0" android:textSize="18sp" android:textStyle="bold" android:padding="18dp" android:layout_marginTop="12dp" android:background="#FFF4D6" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/attendanceBtn" android:text="📸  Face Attendance" android:layout_marginTop="18dp" android:layout_width="match_parent" android:layout_height="55dp"/>
+<Button android:id="@+id/addBtn" android:text="👷  Add Labour" android:layout_width="match_parent" android:layout_height="55dp"/>
+<Button android:id="@+id/listBtn" android:text="📋  Labour List" android:layout_width="match_parent" android:layout_height="55dp"/>
+<Button android:id="@+id/paymentBtn" android:text="💰  Wages & Payment" android:layout_width="match_parent" android:layout_height="55dp"/>
+<Button android:id="@+id/reportBtn" android:text="📊  Reports" android:layout_width="match_parent" android:layout_height="55dp"/>
+<TextView android:text="Offline-first • Data stays on this phone" android:gravity="center" android:textColor="#666666" android:layout_marginTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout></ScrollView>
