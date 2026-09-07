@@ -1,0 +1,34 @@
+name: Extract Android Project
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Extract project ZIP
+        run: |
+          ZIP=$(find . -maxdepth 1 -type f -name "*.zip" | head -n 1)
+          mkdir extracted
+          unzip -o "$ZIP" -d extracted
+
+          ROOT=$(find extracted -mindepth 1 -maxdepth 1 -type d | head -n 1)
+
+          cp -r "$ROOT"/* .
+          rm -rf extracted "$ZIP"
+
+      - name: Commit project files
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "Add Android project files" || echo "Nothing to commit"
+          git push
