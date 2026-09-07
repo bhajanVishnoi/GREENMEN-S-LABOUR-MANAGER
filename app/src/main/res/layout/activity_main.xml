@@ -10,7 +10,7 @@
 <Button android:id="@+id/attendanceBtn" android:text="📸  Face Attendance" android:layout_marginTop="18dp" android:layout_width="match_parent" android:layout_height="55dp"/>
 <Button android:id="@+id/addBtn" android:text="👷  Add Labour" android:layout_width="match_parent" android:layout_height="55dp"/>
 <Button android:id="@+id/listBtn" android:text="📋  Labour List" android:layout_width="match_parent" android:layout_height="55dp"/>
-<Button android:id="@+id/paymentBtn" android:text="💰  Wages & Payment" android:layout_width="match_parent" android:layout_height="55dp"/>
+<Button android:id="@+id/paymentBtn" android:text="💰  Wages &amp; Payment" android:layout_width="match_parent" android:layout_height="55dp"/>
 <Button android:id="@+id/reportBtn" android:text="📊  Reports" android:layout_width="match_parent" android:layout_height="55dp"/>
 <TextView android:text="Offline-first • Data stays on this phone" android:gravity="center" android:textColor="#666666" android:layout_marginTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
 </LinearLayout></ScrollView>
